@@ -132,8 +132,10 @@
 
 .faq-question {
     display: inline-block;
+    width: 90%;
   /* Adjust the width as needed */
     cursor: pointer;
+  text-align: left;
 }
   </style>
 
@@ -145,16 +147,13 @@
           <h2 class="h2 hero-title" style="color: white; text-align: center;">
             Frequently Asked Questions
           </h2>
-          <ol style="color:  white;" class="">
+          <ol style="color:  white;" class="faq-list">
             <!-- Example for one FAQ item -->
             <li>
-              <button class="faq-question" style="color: white;">
-                What types of disability care services do you provide?</button>
-              <div class="faq-answer">
-                Answer: We offer a wide range of disability care services, including personal care,
-                in-home support, respite care, transportation assistance, and more. Our services are tailored to meet
-                the unique needs of each individual.</div>
-            </li>
+              
+              <button class="faq-question" style="color: white;"> What types of disability care services do you provide?</button>
+              <div class="faq-answer">Answer: We offer a wide range of disability care services, including personal care, in-home support, respite care, transportation assistance, and more. Our services are tailored to meet the unique needs of each individual.</div>
+          </li>
 
 
             <li>
@@ -238,10 +237,7 @@
 
 
   <style>
-    .faq-list {
-      list-style: none;
-      padding: 0;
-    }
+
 
     .faq-list li {
       opacity: 0;
