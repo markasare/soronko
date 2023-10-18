@@ -22,7 +22,7 @@
   <link rel="preload" href="./assets/images/hero-bg-bottom.png" as="image">
   <link rel="preload" href="./logo.png" as="image">
   <link rel="preload" href="./logo2.png" as="image">
-  <link rel="preload" href="./index.html" as="html" >
+  <link rel="preload" href="./index.html" as="html">
   <link rel="preload" href="./assets/js/script.js" as="script">
   <link rel="preload" href="./assets/css/style.css" as="style">
   <link rel="preload" href="./assets/images/homecare/hero0.jpeg" as="image">
@@ -121,50 +121,121 @@
     START HERO BANNER
   -->
 
-  </section>
-  
-  <section class="section features">
-    <div class="container" style="margin-top:5.0%; padding-top:3.5%;">
 
-      <h2 class="h2 section-title underline">Our Services</h2>
+  <style>
+    .header {
+      background-color: #063f3b;
+    }
 
-      <ul class="features-list">
+    li {
+      margin-top: 1.3%;
+    }
 
-        <li>
-          <div class="features-card">
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .section {
+      flex: 1;
+      padding: 10px;
+      border: 1px;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .image {
+      width: 100%;
+      max-width: 350px;
+      border-radius: 10px;
+    }
 
 
 
+    .image-big {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .main {
+        flex-direction: column;
+      }
+
+      .first-heading {
+        padding-top: 37.5%
+      }
+    }
+
+    .space-after-header {
+      margin-top: 5.2%;
+    }
+  </style>
+  <main>
+    <article>
+      <section class="section" id="adl">
+        <div class="space-after-header"></div>
+      </section>
+
+      <section style="padding-top: 0%;">
+        <h2 class="h2 section-title underline first-heading">Our services</h2>
+        <div class="container main">
+          <div class="section">
             <div class="content">
-              <h3 class="h3 title">Activities of Daily Living (ADL)</h3>
+              <img class="image" src="assets/images/homecare/hero7.jpeg" alt="Image 1">
+            </div>
+          </div>
 
-              <p class="text">
+
+          <div class="section" id="accommodation">
+            <div class="content">
+
+              <h2 style="margin-bottom: 2%;">Activities of Daily Living (ADL)</h2>
+              <p class="text" style="text-align: justify;">
                 Our support team is dedicated to assisting you with a broad range of activities of daily living
                 including eating, bathing, cooking, household cleaning, medication administration, and shopping. We
-                deeply appreciate and respect that everyone&#39;s needs are unique. Therefore, our primary objective is to
+                deeply appreciate and respect that everyone&#39;s needs are unique. Therefore, our primary objective is
+                to
                 provide personalised assistance in daily personal activities, fostering independent living both within
                 the comfort of your home and in the wider community.
               </p>
+
             </div>
-
           </div>
-        </li>
-      </ul>
 
-      <figure class="features-banner">
-        <img src="./assets/images/homecare/hero7.jpeg" width="369" height="318" loading="lazy" alt="Features Banner"
-          class="w-100 ">
-      </figure>
 
-      <ul class="features-list">
+        </div>
 
-        <li>
-          <div class="features-card">
 
+        <div class="container main">
+
+
+
+
+          <div class="section">
             <div class="content">
-              <h3 class="h3 title">Accommodation &amp; SIL</h3>
 
-              <p class="text">
+              <h2 style="margin-bottom: 2%;">Accommodation &amp; SIL</h2>
+              <p class="text" style="text-align: justify;">
                 Our Supported Independent Living (SIL) services are tailored to empower you to lead life on your
                 own terms. Whether you live independently or in shared housing, our comprehensive services cover a
                 wide range of daily living activities. These include assistance with cooking, cleaning, and laundry,
@@ -173,71 +244,102 @@
                 your specific needs and requirements. Currently, we have a new 4-bedroom house available for rent in
                 Taylor, Australian Capital Territory.
               </p>
+
+            </div>
+          </div>
+          <div class="section" id="community-nursing">
+            <div class="content">
+              <img class="image" src="assets/images/homecare/hero5.jpeg" alt="Image 1">
+            </div>
+          </div>
+
+          <div class="container main">
+            <div class="section">
+              <div class="content">
+                <img class="image-big" src="assets/images/homecare/hero10.jpeg" alt="Image 1" style="margin-top: 5%;">
+              </div>
             </div>
 
+
+            <div class="section">
+              <div class="content">
+
+                <h2 style="margin-bottom: 2%;">Community nursing services</h2>
+                <p class="text" style="text-align: justify;">
+                  Our specialised staff and qualified community nurses are well trained and highly experienced in
+                  addressing the needs of individuals with complex health conditions, including but not limited to:
+                </p>
+                <ul style="text-align: left;">
+                  <li>
+                    ✔ Complex Bowel Care
+                  </li>
+                  <li>
+                    ✔ PEG Feeding and Management
+                  </li>
+                  <li id="stoma">
+                    ✔ Support after a hospital stay and post-operative care
+                  </li>
+                  <li>
+                    ✔ Monitoring vitals such as blood pressure, pulse, temperature, and blood sugar levels
+                  </li>
+                  <li>
+                    ✔ Urinary Catheter Management
+                  </li>
+                  <li>
+                    ✔ Subcutaneous Injections
+                  </li>
+                  <li>
+                    ✔ Health assessments and assistance with developing treatment plans
+                  </li>
+                  <li>
+                    ✔ Stoma care
+                  </li>
+                  <li>
+                    ✔ Medication Management
+                  </li>
+                  <li>
+                    ✔ Diabetes management
+                  </li>
+                  <li>
+                    ✔ Assistance with self-care activities
+                  </li>
+                </ul>
+
+              </div>
+            </div>
           </div>
-        </li>
 
-      </ul>
-      <style>
-    .container {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-    }
+          <div class="section" id="transp">
+            <div class="content">
+              <h2 style="margin-bottom: 1%;">
+                Assistance with travel and transportation
+              </h2>
+              <p class="text" style="text-align: justify;">
+                We acknowledge that connecting people with services is a fundamental aspect of leading a fulfilling
+                life. Our reliable transportation services ensure safe and hassle-free commuting, fostering connections
+                within the broader community.
+              </p>
+              <h2 style="margin-bottom: 1%; margin-top: 5%;">
+                Social and community participation, transport
+              </h2>
+              <p class="text" style="text-align: justify;">
+                Our support services extend to helping you participate in structured group-based recreational
+                activities. We also facilitate individualised pursuits such as going to the movies, visiting places you
+                enjoy, engaging in sports, acquiring new skills, and reconnecting with friends and family.
+              </p>
+            </div>
+          </div>
+          <div class="section">
+            <div class="content">
+              <img class="image-big" src="assets/images/homecare/hero6.jpeg" alt="Image 1">
+            </div>
+          </div>
+        </div>
+      </section>
 
-    .half {
-      width: 45%; /* Adjust the width as needed */
-    }
-  </style>
-
-
-      
-    </section>
-    
-                <div class="content">
-                  <h2 style="text-align: center;">Community Nursing Services</h2>
-  
-                  <div class="container" style="margin-top: 1%;">
-                    <div class="half">
-                      <ul>
-                        <li>&bull; Complex Bowel Care</li>
-                        <li>&bull; PEG Feeding and Management</li>
-                        <li>&bull; Urinary Catheter Management</li>
-                        <li>&bull; Assistance with self-care activities</li>
-                        <li>&bull; Subcutaneous Injections</li>
-                        <li>&bull; Health assessments and assistance with developing treatment plans</li>
-                      </ul>
-                    </div>
-                    <div class="half">
-                      <ul>
-                        <li>&bull; Stoma care</li>
-                        <li>&bull; Medication Management</li>
-                        <li>&bull; Monitoring vitals such as blood pressure, pulse, temperature, and blood sugar levels</li>
-                        <li>&bull; Diabetes management</li>
-                        <li>&bull; Support after a hospital stay and post-operative care</li>
-                      
-                      </ul>
-                    </div>
-                  </div>
-                  </div>
-                  </div>
-
-
-<style>
-.header {
-  background-color: #063f3b;
-}
-  </style>
-
-<main>
-    <article>
-        <section class="section">
-            <div class="space-after-header"></div>
-          </section>
     </article>
-</main>
-  
+  </main>
+
 
 
 
@@ -254,7 +356,7 @@
 
         <div class="footer-brand">
 
-          <h2 >
+          <h2>
             Follow us
             <br>
             <br>
@@ -292,7 +394,7 @@
           </li>
 
           <li>
-            <a href="index.html#services" class="footer-link">Services</a>
+            <a href="#top" class="footer-link">Services</a>
           </li>
         </ul>
 
@@ -302,17 +404,21 @@
             <p class="footer-list-title">Our Services</p>
           </li>
           <li>
-            <a href="index.html#services" class="footer-link">Accommodation & SIL</a>
+            <a href="#adl" class="footer-link">Activities of Daily Living</a>
           </li>
           <li>
-            <a href="index.html#services" class="footer-link">Communuity Nursing Services</a>
+            <a href="#accommodation" class="footer-link">Accommodation & SIL</a>
           </li>
           <li>
-            <a href="index.html#services" class="footer-link">In-house nursing services</a>
+            <a href="#community-nursing" class="footer-link">Community Nursing Services</a>
           </li>
 
           <li>
-            <a href="index.html#services" class="footer-link">Community Access</a>
+            <a href="#transp" class="footer-link">Community Access</a>
+          </li>
+
+          <li>
+            <a href="#stoma" class="footer-link">Transportation</a>
           </li>
 
         </ul>
@@ -383,7 +489,7 @@
 
     <div class="footer-bottom">
       <p class="copyright">
-        &copy; 2023 Soronko Care Services (SCS) Pty. Ltd. 
+        &copy; 2023 Soronko Care Services (SCS) Pty. Ltd.
         <br>ABN: 88 660 342 941
         <br>All Rights Reserved
       </p>
@@ -409,8 +515,48 @@
   <script src="./assets/js/script.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+    let slideIndex = 0;
+    showSlides();
 
-  
+    function showSlides() {
+      let i;
+      const slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 5000); // Change slide every 5 seconds (adjust as needed)
+    }
+  </script>
+  <script>
+    // Get all list items in the FAQ
+    const faqItems = document.querySelectorAll('.faq-list li');
+
+    // Function to add fade-in animation
+    function fadeInItems() {
+      faqItems.forEach((item, index) => {
+        if (index % 2 === 0) {
+          // Even-numbered items (index is even)
+          item.style.opacity = '1';
+          item.style.transform = 'translateX(0)';
+        } else {
+          // Odd-numbered items (index is odd)
+          item.style.opacity = '1';
+          item.style.transform = 'translateX(0)';
+        }
+      });
+    }
+
+    // Call the function when the page is loaded
+    window.addEventListener('load', fadeInItems);
+  </script>
+
 
 </body>
+
 </html>
