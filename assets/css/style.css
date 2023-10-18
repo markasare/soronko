@@ -99,6 +99,47 @@
 }
 
 
+/* Style for Vision and Mission Statements */
+
+
+/* Style for Mission Statement */
+
+.mission-statement {
+  text-align: left;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: var(--deep_blue);
+  color: var(--white);
+  border-radius: var(--radius-12);
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.vision-statement {
+  text-align: justify; /* Set text alignment to justify */
+  margin: 20px 0;
+  padding: 20px;
+  background-color: var(--deep_blue);
+  color: var(--white);
+  border-radius: var(--radius-12);
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.mission-statement ul {
+  list-style-type: disc;
+  padding-inline-start: 20px;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.mission-statement li {
+  margin-bottom: 10px;
+}
+
+
+
+
 
 
 
