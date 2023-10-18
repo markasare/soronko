@@ -179,113 +179,52 @@
         </li>
 
       </ul>
+      <style>
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
 
-      <ul class="features-list">
+    .half {
+      width: 45%; /* Adjust the width as needed */
+    }
+  </style>
+
+
+      
+    </section>
+    
+                <div class="content">
+                  <h2 style="text-align: center;">Community Nursing Services</h2>
   
-          <li>
-            <div class="features-card">
-  
-  
-  
-              <div class="content">
-                <h3 class="h3 title">Community nursing services</h3>
-  
-                <p class="text">
-                    Our specialised staff and qualified community nurses are well trained and highly experienced in
-                    addressing the needs of individuals with complex health conditions, including but not limited to:
-                </p>
-                </div>
-                </div>
-                </li>
-                </ul>
-    </div>
+                  <div class="container" style="margin-top: 1%;">
+                    <div class="half">
+                      <ul>
+                        <li>&bull; Complex Bowel Care</li>
+                        <li>&bull; PEG Feeding and Management</li>
+                        <li>&bull; Urinary Catheter Management</li>
+                        <li>&bull; Assistance with self-care activities</li>
+                        <li>&bull; Subcutaneous Injections</li>
+                        <li>&bull; Health assessments and assistance with developing treatment plans</li>
+                      </ul>
+                    </div>
+                    <div class="half">
+                      <ul>
+                        <li>&bull; Stoma care</li>
+                        <li>&bull; Medication Management</li>
+                        <li>&bull; Monitoring vitals such as blood pressure, pulse, temperature, and blood sugar levels</li>
+                        <li>&bull; Diabetes management</li>
+                        <li>&bull; Support after a hospital stay and post-operative care</li>
+                      
+                      </ul>
+                    </div>
+                  </div>
+                  </div>
+                  </div>
 
 
-
-
-  </section>
-  
-
-
- 
-
-  <style>
-    .faq-list {
-  list-style: none;
-  padding: 0;
-}
-
-.faq-list li {
-  opacity: 0;
-  transform: translateX(0);
-  transition: opacity 0.5s, transform 0.5s;
-}
-
-.faq-list li:nth-child(odd) {
-  animation: fadeInLeft 1s ease-in-out forwards;
-}
-
-.faq-list li:nth-child(even) {
-  animation: fadeInRight 1s ease-in-out forwards;
-}
-
-@keyframes fadeInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes fadeInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-
-
-
-
-ol li {
-    list-style: decimal;
-    list-style-position: inside;
-    padding: 1%;
-}
-
-.hero-banner{
-	background-size: cover;
-	min-height: 500px;
-	position: relative;
-    padding: 137px 30px 30px;
-    min-height: auto;
-}
-
-.hero-banner:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: rgba(5, 87, 91, 0.88);
-}
-.container.text-center {
-    position: relative;
-    z-index: 1;
-    align-content: center;
-}
-
+<style>
 .header {
   background-color: #063f3b;
 }
@@ -470,46 +409,7 @@ ol li {
   <script src="./assets/js/script.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <script>
-    let slideIndex = 0;
-    showSlides();
 
-    function showSlides() {
-        let i;
-        const slides = document.getElementsByClassName("mySlides");
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {
-            slideIndex = 1;
-        }
-        slides[slideIndex - 1].style.display = "block";
-        setTimeout(showSlides, 5000); // Change slide every 5 seconds (adjust as needed)
-    }
-</script>
-<script>
-    // Get all list items in the FAQ
-    const faqItems = document.querySelectorAll('.faq-list li');
-  
-    // Function to add fade-in animation
-    function fadeInItems() {
-      faqItems.forEach((item, index) => {
-        if (index % 2 === 0) {
-          // Even-numbered items (index is even)
-          item.style.opacity = '1';
-          item.style.transform = 'translateX(0)';
-        } else {
-          // Odd-numbered items (index is odd)
-          item.style.opacity = '1';
-          item.style.transform = 'translateX(0)';
-        }
-      });
-    }
-  
-    // Call the function when the page is loaded
-    window.addEventListener('load', fadeInItems);
-  </script>
   
 
 </body>
