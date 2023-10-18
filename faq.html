@@ -124,6 +124,7 @@
   <style>
     .faq-answer {
     display: none;
+    padding-bottom: 5%;
 }
 .faq-number {
     font-weight: bold;
@@ -151,23 +152,23 @@
             <!-- Example for one FAQ item -->
             <li>
               
-              <button class="faq-question" style="color: white;"> What types of disability care services do you provide?</button>
-              <div class="faq-answer">Answer: We offer a wide range of disability care services, including personal care, in-home support, respite care, transportation assistance, and more. Our services are tailored to meet the unique needs of each individual.</div>
+              <button class="faq-question" style="color: white;" id="faq1"> What types of disability care services do you provide?</button>
+              <div class="faq-answer" id="answer1">Answer: We offer a wide range of disability care services, including personal care, in-home support, respite care, transportation assistance, and more. Our services are tailored to meet the unique needs of each individual.</div>
           </li>
 
 
             <li>
-              <button class="faq-question" style="color: white;">
+              <button class="faq-question" style="color: white;" id="faq2">
                 How can I request disability care services for myself or a loved one? </button>
-              <div class="faq-answer">
+              <div class="faq-answer" id="answer2">
               Answer: Requesting our services is easy. Simply contact our team through our website or
               give us a call. We will guide you through the process, assess your needs, and create a personalized care
               plan.</div>
             </li>
 
             <li>
-              <button class="faq-question" style="color: white;">     Are your caregivers trained and qualified?       </button>
-              <div class="faq-answer">  
+              <button class="faq-question" style="color: white;" id="faq3">     Are your caregivers trained and qualified?       </button>
+              <div class="faq-answer" id="answer3">  
                 Answer: Yes, our caregivers are highly trained, certified, and experienced in providing disability care.
               They undergo regular training to stay updated on best practices and ensure the safety and well-being of
               our
@@ -175,54 +176,54 @@
             </li>
 
             <li>
-              <button class="faq-question" style="color: white;">      
+              <button class="faq-question" style="color: white;" id="faq4">      
                 Can I choose my caregiver?    </button>
-              <div class="faq-answer">  
+              <div class="faq-answer" id="answer4">  
                 Answer: Yes, we understand the importance of compatibility. We work with you to select a caregiver whose
                 skills and personality align with your preferences and needs.    </div>
             </li>
 
             <li>
-              <button class="faq-question" style="color: white;">    
+              <button class="faq-question" style="color: white;" id="faq5">    
                 What is the cost of disability care services?     </button>
-              <div class="faq-answer">  
+              <div class="faq-answer" id="answer5">  
                 Answer: The cost varies based on the type and duration of care needed. We offer transparent pricing and
                 can discuss payment options, including government funding and insurance, to make our services affordable.     </div>
             </li>
 
             <li>
-              <button class="faq-question" style="color: white;">      
+              <button class="faq-question" style="color: white;" id="faq6">      
                 What is the cost of disability care services?   </button>
-              <div class="faq-answer"> 
+              <div class="faq-answer" id="answer6"> 
                 Answer: The cost varies based on the type and duration of care needed. We offer transparent pricing and
                 can discuss payment options, including government funding and insurance, to make our services affordable.     </div>
             </li>
 
             <li>
-              <button class="faq-question" style="color: white;">     Is emergency care available?     </button>
-              <div class="faq-answer">   
+              <button class="faq-question" style="color: white;" id="faq7">     Is emergency care available?     </button>
+              <div class="faq-answer" id="answer7">   
                 Answer: Yes, we provide 24/7 emergency care services. Our dedicated team is ready to assist you in case
                 of any urgent situation. You can reach our emergency hotline at 0414 022 529.   </div>
             </li>
 
             <li>
-              <button class="faq-question" style="color: white;">   How do I schedule care services?      </button>
-              <div class="faq-answer"> 
+              <button class="faq-question" style="color: white;" id="faq8">   How do I schedule care services?      </button>
+              <div class="faq-answer" id="answer8"> 
                 Answer: Scheduling is flexible. You can arrange care services on a regular basis or as needed. Contact
                 us, and we will work with you to create a care schedule that suits your lifestyle.     </div>
             </li>
 
             <li>
-              <button class="faq-question" style="color: white;">       What areas do you serve?     </button>
-              <div class="faq-answer">  
+              <button class="faq-question" style="color: white;" id="faq9">       What areas do you serve?     </button>
+              <div class="faq-answer" id="answer9">  
                 Answer: We proudly serve predominantly ACT (Canberra and the surrounding areas). Our dedicated team is
                 committed to providing high-quality
                 disability care to our community.     </div>
             </li>
 
             <li>
-              <button class="faq-question" style="color: white;">      How can I get started with your disability care services?      </button>
-              <div class="faq-answer"> 
+              <button class="faq-question" style="color: white;" id="faq10">      How can I get started with your disability care services?      </button>
+              <div class="faq-answer" id="answer10"> 
                 Answer: Getting started is simple. Contact us today to discuss your needs, schedule a
                 consultation, and take the first step toward receiving compassionate and professional disability care.    </div>
             </li>
@@ -497,17 +498,20 @@
   </a>
 
   <script>
-    // Get all FAQ questions
-const faqQuestions = document.querySelectorAll('.faq-question');
-
-// Add click event listeners to each question
-faqQuestions.forEach(question => {
-    question.addEventListener('click', () => {
-        const answer = question.nextElementSibling; // Get the answer next to the clicked question
-        answer.style.display = answer.style.display === 'none' ? 'block' : 'none'; // Toggle the answer's visibility
+// JavaScript to toggle FAQ answers
+document.querySelectorAll('.faq-question').forEach(question => {
+    question.addEventListener('click', function () {
+        const answerId = 'answer' + this.id.replace('faq', '');
+        const answer = document.getElementById(answerId);
+        if (answer.style.display === 'block') {
+            answer.style.display = 'none';
+        } else {
+            answer.style.display = 'block';
+        }
     });
 });
 </script>
+
 
 
   <script src="./assets/js/script.js"></script>
