@@ -22,7 +22,7 @@
   <link rel="preload" href="./assets/images/hero-bg-bottom.png" as="image">
   <link rel="preload" href="./logo.png" as="image">
   <link rel="preload" href="./logo2.png" as="image">
-  <link rel="preload" href="./index.html" as="html" >
+  <link rel="preload" href="./index.html" as="html">
   <link rel="preload" href="./assets/js/script.js" as="script">
   <link rel="preload" href="./assets/css/style.css" as="style">
   <link rel="preload" href="./assets/images/homecare/hero0.jpeg" as="image">
@@ -119,162 +119,218 @@
   <div class="space-after-header"></div>
   <!--
     START HERO BANNER
+
   -->
+  <style>
+    .faq-answer {
+    display: none;
+}
+.faq-number {
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.faq-question {
+    display: inline-block;
+  /* Adjust the width as needed */
+    cursor: pointer;
+}
+  </style>
+
+
   <section class="hero-banner" id="home-section">
     <div class="container text-center" style="margin-top: 2%;padding-top: 3%;"> <!-- Centered container -->
       <div class="row">
         <div class="col-md-12">
-          <h2 class="h2 hero-title" style="color: white; text-align: center;"> 
+          <h2 class="h2 hero-title" style="color: white; text-align: center;">
             Frequently Asked Questions
           </h2>
-          <ol style="color:  white;" class="faq-list"> 
-            <li>What types of disability care services do you provide?<br>
-            Answer: We offer a wide range of disability care services, including personal care,
-            in-home support, respite care, transportation assistance, and more. 
-            Our services are tailored to meet the unique needs of each individual.</li>
-            
-            <li>How can I request disability care services for myself or a loved one? <br>
-                Answer: Requesting our services is easy. Simply contact our team through our website or
-                        give us a call. We will guide you through the process, assess your needs, and create a personalized care
-                        plan.</li>
+          <ol style="color:  white;" class="">
+            <!-- Example for one FAQ item -->
+            <li>
+              <button class="faq-question" style="color: white;">
+                What types of disability care services do you provide?</button>
+              <div class="faq-answer">
+                We offer a wide range of disability care services, including personal care,
+                in-home support, respite care, transportation assistance, and more. Our services are tailored to meet
+                the unique needs of each individual.</div>
+            </li>
 
 
             <li>
-                Are your caregivers trained and qualified? <br>
-                    Answer: Yes, our caregivers are highly trained, certified, and experienced in providing disability care.
-                    They undergo regular training to stay updated on best practices and ensure the safety and well-being of our
-                    clients.
-            </li>
-            <li>
-                Can I choose my caregiver?<br>
-                    Answer: Yes, we understand the importance of compatibility. We work with you to select a caregiver whose
-                    skills and personality align with your preferences and needs.
-            </li>
-            <li>
-                What is the cost of disability care services?<br>
-                    Answer: The cost varies based on the type and duration of care needed. We offer transparent pricing and
-                    can discuss payment options, including government funding and insurance, to make our services affordable.
-            </li>
-            <li>
-                Is emergency care available?<br>
-                    Answer: Yes, we provide 24/7 emergency care services. Our dedicated team is ready to assist you in case
-                    of any urgent situation. You can reach our emergency hotline at 0414 022 529.
-            </li>
-            <li>
-                How do I schedule care services?<br>
-                    Answer: Scheduling is flexible. You can arrange care services on a regular basis or as needed. Contact
-                    us, and we will work with you to create a care schedule that suits your lifestyle.
+              <button class="faq-question" style="color: white;">
+                How can I request disability care services for myself or a loved one? </button>
+              <div class="faq-answer">
+              Answer: Requesting our services is easy. Simply contact our team through our website or
+              give us a call. We will guide you through the process, assess your needs, and create a personalized care
+              plan.</div>
             </li>
 
             <li>
-                What areas do you serve?<br>
-                    Answer: We proudly serve predominantly ACT (Canberra and the surrounding areas). Our dedicated team is committed to providing high-quality
-                    disability care to our community.
+              <button class="faq-question" style="color: white;">     Are your caregivers trained and qualified?       </button>
+              <div class="faq-answer">  
+                Answer: Yes, our caregivers are highly trained, certified, and experienced in providing disability care.
+              They undergo regular training to stay updated on best practices and ensure the safety and well-being of
+              our
+              clients.    </div>
             </li>
+
             <li>
-                How can I get started with your disability care services? <br>
+              <button class="faq-question" style="color: white;">      
+                Can I choose my caregiver?    </button>
+              <div class="faq-answer">  
+                Answer: Yes, we understand the importance of compatibility. We work with you to select a caregiver whose
+                skills and personality align with your preferences and needs.    </div>
+            </li>
+
+            <li>
+              <button class="faq-question" style="color: white;">    
+                What is the cost of disability care services?     </button>
+              <div class="faq-answer">  
+                Answer: The cost varies based on the type and duration of care needed. We offer transparent pricing and
+                can discuss payment options, including government funding and insurance, to make our services affordable.     </div>
+            </li>
+
+            <li>
+              <button class="faq-question" style="color: white;">      
+                What is the cost of disability care services?   </button>
+              <div class="faq-answer"> 
+                Answer: The cost varies based on the type and duration of care needed. We offer transparent pricing and
+                can discuss payment options, including government funding and insurance, to make our services affordable.     </div>
+            </li>
+
+            <li>
+              <button class="faq-question" style="color: white;">     Is emergency care available?     </button>
+              <div class="faq-answer">   
+                Answer: Yes, we provide 24/7 emergency care services. Our dedicated team is ready to assist you in case
+                of any urgent situation. You can reach our emergency hotline at 0414 022 529.   </div>
+            </li>
+
+            <li>
+              <button class="faq-question" style="color: white;">   How do I schedule care services?      </button>
+              <div class="faq-answer"> 
+                Answer: Scheduling is flexible. You can arrange care services on a regular basis or as needed. Contact
+                us, and we will work with you to create a care schedule that suits your lifestyle.     </div>
+            </li>
+
+            <li>
+              <button class="faq-question" style="color: white;">       What areas do you serve?     </button>
+              <div class="faq-answer">  
+                Answer: We proudly serve predominantly ACT (Canberra and the surrounding areas). Our dedicated team is
+                committed to providing high-quality
+                disability care to our community.     </div>
+            </li>
+
+            <li>
+              <button class="faq-question" style="color: white;">      How can I get started with your disability care services?      </button>
+              <div class="faq-answer"> 
                 Answer: Getting started is simple. Contact us today to discuss your needs, schedule a
-                consultation, and take the first step toward receiving compassionate and professional disability care.
+                consultation, and take the first step toward receiving compassionate and professional disability care.    </div>
             </li>
           </ol>
         </div>
       </div>
     </div>
   </section>
-  
-  
 
- 
+
+
+
 
   <style>
     .faq-list {
-  list-style: none;
-  padding: 0;
-}
+      list-style: none;
+      padding: 0;
+    }
 
-.faq-list li {
-  opacity: 0;
-  transform: translateX(0);
-  transition: opacity 0.5s, transform 0.5s;
-}
+    .faq-list li {
+      opacity: 0;
+      transform: translateX(0);
+      transition: opacity 0.5s, transform 0.5s;
+    }
 
-.faq-list li:nth-child(odd) {
-  animation: fadeInLeft 1s ease-in-out forwards;
-}
+    .faq-list li:nth-child(odd) {
+      animation: fadeInLeft 1s ease-in-out forwards;
+    }
 
-.faq-list li:nth-child(even) {
-  animation: fadeInRight 1s ease-in-out forwards;
-}
+    .faq-list li:nth-child(even) {
+      animation: fadeInRight 1s ease-in-out forwards;
+    }
 
-@keyframes fadeInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
+    @keyframes fadeInLeft {
+      0% {
+        opacity: 0;
+        transform: translateX(-50px);
+      }
 
-@keyframes fadeInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes fadeInRight {
+      0% {
+        opacity: 0;
+        transform: translateX(50px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
 
 
 
 
 
-ol li {
-    list-style: decimal;
-    list-style-position: inside;
-    padding: 1%;
-}
-.hero-banner{
-    background: url("./assets/images/homecare/hero7.jpeg") no-repeat;
-	background-size: cover;
-	min-height: 500px;
-	position: relative;
-    padding: 137px 30px 30px;
-    min-height: auto;
-}
-.hero-banner:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: rgba(5, 87, 91, 0.88);
-}
-.container.text-center {
-    position: relative;
-    z-index: 1;
-    align-content: center;
-}
+    ol li {
+      list-style: decimal;
+      list-style-position: inside;
+      padding: 1%;
+    }
 
-.header {
-  background-color: #063f3b;
-}
+    .hero-banner {
+      background: url("./assets/images/homecare/hero7.jpeg") no-repeat;
+      background-size: cover;
+      min-height: 500px;
+      position: relative;
+      padding: 137px 30px 30px;
+      min-height: auto;
+    }
+
+    .hero-banner:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background: rgba(5, 87, 91, 0.88);
+    }
+
+    .container.text-center {
+      position: relative;
+      z-index: 1;
+      align-content: center;
+    }
+
+    .header {
+      background-color: #063f3b;
+    }
   </style>
 
-<main>
+  <main>
     <article>
-        <section class="section">
-            <div class="space-after-header"></div>
-          </section>
+      <section class="section">
+        <div class="space-after-header"></div>
+      </section>
     </article>
-</main>
-  
+  </main>
+
 
 
 
@@ -444,7 +500,18 @@ ol li {
     <ion-icon name="arrow-up-outline"></ion-icon>
   </a>
 
+  <script>
+    // Get all FAQ questions
+const faqQuestions = document.querySelectorAll('.faq-question');
 
+// Add click event listeners to each question
+faqQuestions.forEach(question => {
+    question.addEventListener('click', () => {
+        const answer = question.nextElementSibling; // Get the answer next to the clicked question
+        answer.style.display = answer.style.display === 'none' ? 'block' : 'none'; // Toggle the answer's visibility
+    });
+});
+</script>
 
 
   <script src="./assets/js/script.js"></script>
@@ -455,23 +522,23 @@ ol li {
     showSlides();
 
     function showSlides() {
-        let i;
-        const slides = document.getElementsByClassName("mySlides");
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {
-            slideIndex = 1;
-        }
-        slides[slideIndex - 1].style.display = "block";
-        setTimeout(showSlides, 5000); // Change slide every 5 seconds (adjust as needed)
+      let i;
+      const slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 5000); // Change slide every 5 seconds (adjust as needed)
     }
-</script>
-<script>
+  </script>
+  <script>
     // Get all list items in the FAQ
     const faqItems = document.querySelectorAll('.faq-list li');
-  
+
     // Function to add fade-in animation
     function fadeInItems() {
       faqItems.forEach((item, index) => {
@@ -486,11 +553,12 @@ ol li {
         }
       });
     }
-  
+
     // Call the function when the page is loaded
     window.addEventListener('load', fadeInItems);
   </script>
-  
+
 
 </body>
+
 </html>
