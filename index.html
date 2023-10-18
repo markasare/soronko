@@ -22,7 +22,7 @@
   <link rel="preload" href="./assets/images/hero-bg-bottom.png" as="image">
   <link rel="preload" href="./logo.png" as="image">
   <link rel="preload" href="./logo2.png" as="image">
-  <link rel="preload" href="./faq.html" as="html" >
+  <link rel="preload" href="./faq.html" as="html">
   <link rel="preload" href="./assets/js/script.js" as="script">
   <link rel="preload" href="./assets/css/style.css" as="style">
   <link rel="preload" href="./assets/images/homecare/hero0.jpeg" as="image">
@@ -126,7 +126,7 @@
       <!-- 
         - #HERO
       -->
-      
+
       <section class="hero" id="home">
         <div class="container">
           <div class="hero-content">
@@ -144,99 +144,99 @@
             <div>
               <p class="hero-text">
                 “Soronko&quot; means unique, and this concept is the driving force behind our organisation. We firmly
-                believe in the inherent uniqueness of every individual, and our passion lies in delivering person-centred 
+                believe in the inherent uniqueness of every individual, and our passion lies in delivering
+                person-centred
                 supported accommodation, respite, disability, general/mental health, and support services that
                 meets the specific needs of each individual.
               </p>
             </div>
-            
+
           </div>
           <figure class="hero-banner" id="about">
             <div id="slideshow-container">
-                    <div class="mySlides fade">
-                        <img src="./assets/images/homecare/hero0.jpeg" width="694" height="529" loading="lazy" alt="Slide 1">
-                    </div>
-                    <div class="mySlides fade">
-                        <img src="./assets/images/homecare/hero1.jpeg" width="694" height="529" loading="lazy" alt="Slide 2">
-                    </div>
-                    <div class="mySlides fade">
-                      <img src="./assets/images/homecare/hero2.jpeg" width="694" height="529" loading="lazy" alt="Slide 2">
-                  </div>
-                  <div class="mySlides fade">
-                    <img src="./assets/images/homecare/hero3.jpeg" width="694" height="529" loading="lazy" alt="Slide 2">
-                </div>
               <div class="mySlides fade">
-                <img src="./assets/images/homecare/hero5.jpeg" width="694" height="529" loading="lazy" alt="Slide 2">
+                <img src="./assets/images/homecare/hero0.jpeg" width="694" height="529" loading="lazy" alt="">
+              </div>
+              <div class="mySlides fade">
+                <img src="./assets/images/homecare/hero1.jpeg" width="694" height="529" loading="lazy" alt="">
+              </div>
+              <div class="mySlides fade">
+                <img src="./assets/images/homecare/hero2.jpeg" width="694" height="529" loading="lazy" alt="">
+              </div>
+              <div class="mySlides fade">
+                <img src="./assets/images/homecare/hero3.jpeg" width="694" height="529" loading="lazy" alt="">
+              </div>
+              <div class="mySlides fade">
+                <img src="./assets/images/homecare/hero5.jpeg" width="694" height="529" loading="lazy" alt="">
+              </div>
             </div>
-
-                    <!-- Add more images as needed -->
-                </div>
-            </figure>
+          </figure>
         </div>
-    </section>
-    <style>
-      .large-text {
-  font-size: 45px; /* Adjust the font size as needed */
-  /* Add any other styles you want for the large text */
-}
-.small-text {
-    display: block;
-    font-size: 24px; /* Adjust the font size as needed */
-    /* Add any other styles you want for the small text */
-  }
-@media (max-width: 768px) {
-  .hero-content {
-    text-align: center;
-  }
-  
-  .hero-title-container {
-    display: block;
-    text-align: center;
-  }
-  
-  .small-text {
-    display: block;
-    text-align: center;
-    font-size: 18px; /* Adjust the font size as needed */
-    /* Add any other styles you want for the small text */
-  }
-}
-    </style>
+      </section>
+      <style>
+        .large-text {
+          font-size: 45px;
+        }
 
-    <script>
-      const typingText = document.getElementById("typing-text");
-const textToType = "We're your trusted disability care provider, offering compassionate and tailored support for your enhanced well-being.";
-let currentIndex = 0;
+        .small-text {
+          display: block;
+          font-size: 24px;
+        }
 
-function typeText() {
-    if (currentIndex < textToType.length) {
-        typingText.textContent += textToType.charAt(currentIndex);
-        currentIndex++;
-        setTimeout(typeText, 50); // Adjust typing speed as needed
-    } else {
-        setTimeout(deleteText, 2000); // Wait for 2 seconds before deleting
-    }
-}
+        @media (max-width: 768px) {
+          .hero-content {
+            text-align: center;
+          }
 
-function deleteText() {
-    if (currentIndex > 0) {
-        typingText.textContent = typingText.textContent.slice(0, -1);
-        currentIndex--;
-        setTimeout(deleteText, 30); // Adjust deletion speed as needed
-    } else {
-        currentIndex = 0;
-        setTimeout(typeText, 1000); // Wait for 1 second before typing again
-    }
-}
+          .hero-title-container {
+            display: block;
+            text-align: center;
+          }
 
-// Start typing animation
-typeText();
+          .small-text {
+            display: block;
+            text-align: center;
+            font-size: 18px;
+            /* Adjust the font size as needed */
+            /* Add any other styles you want for the small text */
+          }
+        }
+      </style>
 
-    </script>
+      <script>
+        const typingText = document.getElementById("typing-text");
+        const textToType = "We're your trusted disability care provider, offering compassionate and tailored support for your enhanced well-being.";
+        let currentIndex = 0;
+
+        function typeText() {
+          if (currentIndex < textToType.length) {
+            typingText.textContent += textToType.charAt(currentIndex);
+            currentIndex++;
+            setTimeout(typeText, 50); // Adjust typing speed as needed
+          } else {
+            setTimeout(deleteText, 2000); // Wait for 2 seconds before deleting
+          }
+        }
+
+        function deleteText() {
+          if (currentIndex > 0) {
+            typingText.textContent = typingText.textContent.slice(0, -1);
+            currentIndex--;
+            setTimeout(deleteText, 30); // Adjust deletion speed as needed
+          } else {
+            currentIndex = 0;
+            setTimeout(typeText, 1000); // Wait for 1 second before typing again
+          }
+        }
+
+        // Start typing animation
+        typeText();
+
+      </script>
 
 
 
-     <!-- 
+      <!-- 
         - #ABOUT
       -->
 
@@ -244,8 +244,8 @@ typeText();
         <div class="container">
 
           <figure class="about-banner">
-            <img src="./assets/images/homecare/hero8.jpeg" width="700" height="532" loading="lazy" alt="about banner"
-              class="w-100">
+            <img src="./assets/images/homecare/hero8.jpeg" width="700" height="532" loading="lazy" alt=""
+              style="border-radius: 5%;" class="w-100">
           </figure>
           <div class="about-content">
             <h2 class="h2 section-title underline">About Us</h2>
@@ -255,9 +255,9 @@ typeText();
               in the healthcare industry, and we are united by an unwavering commitment to provide top-quality
               accommodation, disability, general and mental health services. We acknowledge and celebrate the
               unique qualities of each individual and take pride in our collaborative approach, working closely with
-              participants to help them achieve their goals. 
+              participants to help them achieve their goals.
             </p>
-<!--
+            <!--
             <p class="about-text">
               We are a registered NDIS provider and we are committed to providing high quality 
               accommodation and disability services to help our participants and their families 
@@ -267,164 +267,174 @@ typeText();
             -->
             <div id="learn-more-content" style="display: none;">
               <p>
-            We firmly believe that one&#39;s living environment significantly impacts their quality of life. 
-            This is why we are dedicated to offering comfortable,
-              secure, and contemporary living conditions tailored to the needs and preferences of our participants.
-              Our commitment extends to delivering person-centred, flexible, and responsive support to/for
-              individuals living with mental illness, disabilities, and other health conditions. At SCS, we prioritise
-              collaboration with our participants to ensure that the services we offer are not only relevant but also
-              suitable and inclusive. 
+                We firmly believe that one&#39;s living environment significantly impacts their quality of life.
+                This is why we are dedicated to offering comfortable,
+                secure, and contemporary living conditions tailored to the needs and preferences of our participants.
+                Our commitment extends to delivering person-centred, flexible, and responsive support to/for
+                individuals living with mental illness, disabilities, and other health conditions. At SCS, we prioritise
+                collaboration with our participants to ensure that the services we offer are not only relevant but also
+                suitable and inclusive.
               </p>
-          </div>
-          <a href="#" id="learn-more-button" >Learn More</a>
+            </div>
+            <a href="#" id="learn-more-button">Learn More</a>
           </div>
 
         </div>
       </section>
       <script>
         document.addEventListener("DOMContentLoaded", function () {
-            const learnMoreButton = document.getElementById("learn-more-button");
-            const learnMoreContent = document.getElementById("learn-more-content");
-    
-            learnMoreButton.addEventListener("click", function (event) {
-                event.preventDefault();
-                if (learnMoreContent.style.display === "none" || learnMoreContent.style.display === "") {
-                    learnMoreContent.style.display = "block";
-                    learnMoreButton.innerText = "Show Less";
-                } else {
-                    learnMoreContent.style.display = "none";
-                    learnMoreButton.innerText = "Learn More";
-                }
-            });
+          const learnMoreButton = document.getElementById("learn-more-button");
+          const learnMoreContent = document.getElementById("learn-more-content");
+
+          learnMoreButton.addEventListener("click", function (event) {
+            event.preventDefault();
+            if (learnMoreContent.style.display === "none" || learnMoreContent.style.display === "") {
+              learnMoreContent.style.display = "block";
+              learnMoreButton.innerText = "Show Less";
+            } else {
+              learnMoreContent.style.display = "none";
+              learnMoreButton.innerText = "Learn More";
+            }
+          });
         });
-    </script>
-
-  
-<style>
-  /* CSS to change the calendar icon color to pink */
-  .pink-calendar-icon {
-    filter: brightness(0) invert(1) sepia(1) saturate(40) hue-rotate(300deg);
-}
-</style>
+      </script>
 
 
-<!--
+      <style>
+        /* CSS to change the calendar icon color to pink */
+        .pink-calendar-icon {
+          filter: brightness(0) invert(1) sepia(1) saturate(40) hue-rotate(300deg);
+        }
+      </style>
+
+
+      <!--
   SECTION: Vision and mission statements
 -->
-<section>
-  <div class="container">
-    <div class="header">
-
-    </div>
-    <div class="section vision">
-        <h2>Our Vision</h2>
-        <div class="vision-statement">
-          <p>Our vision is to provide a nurturing and supportive environment that empowers individuals to make choices that enhance their quality of life, foster independence and enable their active participation in the broader community, both socially and economically.</p>
-
-        </div>
-    </div>
-
-
-
-<section>
-  <div class="container">
-
-    
-    <div class="vision-mission">
-      <h2>Our Mission</h2>
-      <p class="text">
-        Our mission is to assist our participants in improving their quality of life. We are guided by these
-principles:
-      </p>
-      <div class="mission-statement">
-        <ul>
-          <ul style="list-style-type:square;">
-            <li>&bull; <strong>Respect:</strong> We hold a profound respect for every individual, recognize and appreciate their unique strengths and contributions.</li>
-            <li>&bull; <strong>Integrity:</strong> We establish trust through responsible actions and honest relationships.</li>
-            <li>&bull; <strong>Empowerment:</strong> We recognize lived experiences and provide support to make choices that align with specific care needs.</li>
-            <li>&bull; <strong>Diversity:</strong> We embrace the differences among individuals and nurture a safe and supportive environment for all.</li>
-        </ul>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-</section>
-
-
-      <section class="section service" id="pre-services">
+      <section>
         <div class="container">
+          <div class="header">
 
-          <h2 class="h2 section-title underline">Empowering Lives Through Quality Care</h2>
+          </div>
+          <div class="section vision">
+            <h2>Our Vision</h2>
+            <div class="vision-statement">
+              <p>Our vision is to provide a nurturing and supportive environment that empowers individuals to make
+                choices that enhance their quality of life, foster independence and enable their active participation in
+                the broader community, both socially and economically.</p>
 
-          <ul class="service-list">
+            </div>
+          </div>
 
-            <li>
-              <div class="service-card">
 
-               <center>
-                 <img src="./assets/images/brag/calendar.png" alt="Calendar" class="pink-calendar-icon">
-               </center>
-             
-                
-                <h3 class="h3 title">24/7 services</h3>
 
+          <section>
+            <div class="container">
+
+
+              <div class="vision-mission">
+                <h2>Our Mission</h2>
                 <p class="text">
-                  Our dedicated team of caregivers is available 24/7 to provide around-the-clock support for individuals
-                  with complex care needs. From personal care to medication management, we ensure continuous care
-                  and peace of mind for clients and their families.
+                  Our mission is to assist our participants in improving their quality of life. We are guided by these
+                  principles:
                 </p>
-
-
+                <div class="mission-statement">
+                  <ul>
+                    <ul style="list-style-type:square;">
+                      <li>&bull; <strong>Respect:</strong> We hold a profound respect for every individual, recognize
+                        and appreciate their unique strengths and contributions.</li>
+                      <li>&bull; <strong>Integrity:</strong> We establish trust through responsible actions and honest
+                        relationships.</li>
+                      <li>&bull; <strong>Empowerment:</strong> We recognize lived experiences and provide support to
+                        make choices that align with specific care needs.</li>
+                      <li>&bull; <strong>Diversity:</strong> We embrace the differences among individuals and nurture a
+                        safe and supportive environment for all.</li>
+                    </ul>
+                  </ul>
+                </div>
               </div>
-            </li>
+            </div>
 
-            <li>
-              <div class="service-card">
-
-                <center>
-                  <img src="./assets/images/brag/staff.png" alt="Calendar" class="pink-calendar-icon">
-                </center>
-
-                <h3 class="h3 title">Professionalism</h3>
-
-                <p class="text">
-                  Our team comprises dedicated professionals and support staff with the expertise to provide safe and
-                  high-quality services that address the unique healthcare and living requirements of participants. To
-                  uphold the highest standards, we meticulously screen and offer ongoing evidence-based training and
-                  education programs to both our registered and support staff.
-                </p>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="service-card">
-
-                <center>
-                  <img src="./assets/images/brag/ambulance.png" alt="Calendar" class="pink-calendar-icon">
-                </center>
-
-                <h3 class="h3 title">Emergency care</h3>
-
-                <p class="text">
-                  During critical situations, our dedicated team is available around the clock to offer immediate
-                  assistance. Your safety and well-being are our top priority, ensuring swift and reliable support when
-                  you need it the most.
-                </p>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
+          </section>
 
 
+          <section class="section service" id="pre-services">
+            <div class="container">
+
+              <h2 class="h2 section-title underline">Empowering Lives Through Quality Care</h2>
+
+              <ul class="service-list">
+
+                <li>
+                  <div class="service-card">
+
+                    <center>
+                      <img src="./assets/images/brag/calendar.png" alt="Calendar" class="pink-calendar-icon">
+                    </center>
 
 
-   <!-- 
+                    <h3 class="h3 title">24/7 services</h3>
+
+                    <p class="text">
+                      Our dedicated team of caregivers is available 24/7 to provide around-the-clock support for
+                      individuals
+                      with complex care needs. From personal care to medication management, we ensure continuous care
+                      and peace of mind for clients and their families.
+                    </p>
+
+
+                  </div>
+                </li>
+
+                <li>
+                  <div class="service-card">
+
+                    <center>
+                      <img src="./assets/images/brag/staff.png" alt="Calendar" class="pink-calendar-icon">
+                    </center>
+
+                    <h3 class="h3 title">Professionalism</h3>
+
+                    <p class="text">
+                      Our team comprises dedicated professionals and support staff with the expertise to provide safe
+                      and
+                      high-quality services that address the unique healthcare and living requirements of participants.
+                      To
+                      uphold the highest standards, we meticulously screen and offer ongoing evidence-based training and
+                      education programs to both our registered and support staff.
+                    </p>
+
+                  </div>
+                </li>
+
+                <li>
+                  <div class="service-card">
+
+                    <center>
+                      <img src="./assets/images/brag/ambulance.png" alt="Calendar" class="pink-calendar-icon">
+                    </center>
+
+                    <h3 class="h3 title">Emergency care</h3>
+
+                    <p class="text">
+                      During critical situations, our dedicated team is available around the clock to offer immediate
+                      assistance. Your safety and well-being are our top priority, ensuring swift and reliable support
+                      when
+                      you need it the most.
+                    </p>
+
+                  </div>
+                </li>
+
+              </ul>
+
+            </div>
+          </section>
+
+
+
+
+          <!-- 
       
         - #FEATURES
    
@@ -533,170 +543,173 @@ principles:
         - #BLOG
       -->
 
-      <section class="section blog" id="services">
-        <div class="container">
+          <section class="section blog" id="services">
+            <div class="container">
 
-          <h2 class="h2 section-title underline">Our Services</h2>
+              <h2 class="h2 section-title underline">Our Services</h2>
 
-          <ul class="blog-list">
+              <ul class="blog-list">
 
-            <li>
-              <div class="blog-card">
+                <li>
+                  <div class="blog-card">
 
-                <figure class="banner">
-                  <a href="services.html#adl">
-                    <img src="./assets/images/services/Home.jpeg" width="750" height="350" loading="lazy"
-                      alt="" class="img-cover">
-                  </a>
-                </figure>
+                    <figure class="banner">
+                      <a href="services.html#adl">
+                        <img src="./assets/images/services/Home.jpeg" width="750" height="350" loading="lazy" alt=""
+                          class="img-cover">
+                      </a>
+                    </figure>
 
-                <div class="content">
+                    <div class="content">
 
-                  <h3 class="h3 title">
-                    <a href="services.html#adl">
-                      Activities of Daily Living (ADL)
-                    </a>
-                  </h3>
+                      <h3 class="h3 title">
+                        <a href="services.html#adl">
+                          Activities of Daily Living (ADL)
+                        </a>
+                      </h3>
 
-                  <p class="text">
-                    Our support team helps you with day to day tasks such as eating, bathing, cooking, household cleaning, medication administration, and shopping. 
-                  </p>
+                      <p class="text">
+                        Our support team helps you with day to day tasks such as eating, bathing, cooking, household
+                        cleaning, medication administration, and shopping.
+                      </p>
 
-                  <div class="meta">
+                      <div class="meta">
 
 
 
-                  </div>
+                      </div>
 
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="banner">
-                  <a href="services.html#accommodation">
-                    <img src="./assets/images/homecare/hero8.jpeg" width="750" height="350" loading="lazy"
-                      alt="" class="img-cover">
-                  </a>
-                </figure>
-
-                <div class="content">
-                  <h3 class="h3 title">
-                    <a href="services.html#accommodation">
-                      Accommodation & SIL
-                    </a>
-                  </h3>
-
-                  <p class="text">
-                    Our Supported Independent Living (SIL) services are designed to empower you to live life on your terms. 
-                  </p>
-
-                  <div class="meta">
-                   
-
-                  
+                    </div>
 
                   </div>
+                </li>
 
-                </div>
+                <li>
+                  <div class="blog-card">
 
-              </div>
-            </li>
+                    <figure class="banner">
+                      <a href="services.html#accommodation">
+                        <img src="./assets/images/homecare/hero8.jpeg" width="750" height="350" loading="lazy" alt=""
+                          class="img-cover">
+                      </a>
+                    </figure>
 
-            <li>
-              <div class="blog-card">
+                    <div class="content">
+                      <h3 class="h3 title">
+                        <a href="services.html#accommodation">
+                          Accommodation & SIL
+                        </a>
+                      </h3>
 
-                <figure class="banner">
-                  <a href="services.html#community-nursing">
-                    <img src="./assets/images/services/wheel.jpg" width="750" height="350" loading="lazy"
-                      alt="" class="img-cover">
-                  </a>
-                </figure>
+                      <p class="text">
+                        Our Supported Independent Living (SIL) services are designed to empower you to live life on your
+                        terms.
+                      </p>
 
-                <div class="content">
+                      <div class="meta">
 
-                  <h3 class="h3 title">
-                    <a href="services.html#community-nursing">
-                      Community nursing services
-                    </a>
-                  </h3>
 
-                  <p class="text">
-                    Our specialised staff and qualified community nurses are well trained and highly experienced in
-addressing the needs of individuals with complex health conditions.
-                  </p>
 
-                  <div class="meta">
 
+                      </div>
+
+                    </div>
 
                   </div>
+                </li>
 
-                </div>
+                <li>
+                  <div class="blog-card">
 
-              </div>
-            </li>
+                    <figure class="banner">
+                      <a href="services.html#community-nursing">
+                        <img src="./assets/images/services/wheel.jpg" width="750" height="350" loading="lazy" alt=""
+                          class="img-cover">
+                      </a>
+                    </figure>
+
+                    <div class="content">
+
+                      <h3 class="h3 title">
+                        <a href="services.html#community-nursing">
+                          Community nursing services
+                        </a>
+                      </h3>
+
+                      <p class="text">
+                        Our specialised staff and qualified community nurses are well trained and highly experienced in
+                        addressing the needs of individuals with complex health conditions.
+                      </p>
+
+                      <div class="meta">
 
 
-            <li>
-              <div class="blog-card">
+                      </div>
 
-                <figure class="banner">
-                  <a href="services.html#stoma">
-                    <img src="./assets/images/homecare/hero9.jpeg" width="750" height="350" loading="lazy"
-                      alt="" class="img-cover">
-                  </a>
-                </figure>
+                    </div>
 
-                <div class="content">
-
-                  <h3 class="h3 title">
-                    <a href="services.html#stoma">
-                      Assistance with travel and transportation
-                    </a>
-                  </h3>
-
-                  <p class="text">
-                    Our reliable transportation services ensure safe and hassle-free commuting, fostering connections
-                    within the broader community.
-                  </p>
-                  <div class="meta">
                   </div>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="blog-card">
+                </li>
 
-                <figure class="banner">
-                  <a href="services.html#transp">
-                    <img src="./assets/images/services/SIL.jpeg" width="750" height="350" loading="lazy"
-                      alt="" class="img-cover">
-                  </a>
-                </figure>
 
-                <div class="content">
+                <li>
+                  <div class="blog-card">
 
-                  <h3 class="h3 title">
-                    <a href="services.html#transp">
-                      Social &amp; community participation
-                    </a>
-                  </h3>
+                    <figure class="banner">
+                      <a href="services.html#stoma">
+                        <img src="./assets/images/homecare/hero9.jpeg" width="750" height="350" loading="lazy" alt=""
+                          class="img-cover">
+                      </a>
+                    </figure>
 
-                  <p class="text">
-                    Our support services extend to helping you participate in structured group-based recreational
-activities.
-                  </p>
-                  <div class="meta">
+                    <div class="content">
+
+                      <h3 class="h3 title">
+                        <a href="services.html#stoma">
+                          Assistance with travel and transportation
+                        </a>
+                      </h3>
+
+                      <p class="text">
+                        Our reliable transportation services ensure safe and hassle-free commuting, fostering
+                        connections
+                        within the broader community.
+                      </p>
+                      <div class="meta">
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
+                </li>
+                <li>
+                  <div class="blog-card">
+
+                    <figure class="banner">
+                      <a href="services.html#transp">
+                        <img src="./assets/images/services/SIL.jpeg" width="750" height="350" loading="lazy" alt=""
+                          class="img-cover">
+                      </a>
+                    </figure>
+
+                    <div class="content">
+
+                      <h3 class="h3 title">
+                        <a href="services.html#transp">
+                          Social &amp; community participation
+                        </a>
+                      </h3>
+
+                      <p class="text">
+                        Our support services extend to helping you participate in structured group-based recreational
+                        activities.
+                      </p>
+                      <div class="meta">
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
 
     </article>
   </main>
@@ -876,18 +889,19 @@ activities.
     showSlides();
 
     function showSlides() {
-        let i;
-        const slides = document.getElementsByClassName("mySlides");
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {
-            slideIndex = 1;
-        }
-        slides[slideIndex - 1].style.display = "block";
-        setTimeout(showSlides, 5000); // Change slide every 5 seconds (adjust as needed)
+      let i;
+      const slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 5000); // Change slide every 5 seconds (adjust as needed)
     }
-</script>
+  </script>
 </body>
+
 </html>
